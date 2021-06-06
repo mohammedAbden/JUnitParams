@@ -532,6 +532,14 @@ public class JUnitParamsRunner extends BlockJUnit4ClassRunner {
 
         return child;
     }
+    
+    public ParameterisedTestClassRunner getParameterisedRunner() {
+		return parameterisedRunner;
+	}
+
+	public void setParameterisedRunner(ParameterisedTestClassRunner parameterisedRunner) {
+		this.parameterisedRunner = parameterisedRunner;
+	}
 
     /**
      * Shortcut for returning an array of objects. All parameters passed to this
